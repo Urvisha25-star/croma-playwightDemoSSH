@@ -4,10 +4,15 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
     inputs:
-      test_file:
+      test_file: 
         description: 'e2e.spec.ts file to run (optional, runs all tests if not specified)'
         required: false
         default: ''
+        type: choice
+        options:
+          - login
+          - e2e
+          
   pull_request:
     branches: [ main, master ]
 jobs:
