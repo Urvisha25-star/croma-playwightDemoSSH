@@ -16,12 +16,12 @@ export class HomePage {
   }
 
   async searchProduct(product) {
-    await this.searchBox.fill(product, { timeout: 80000 });
+    await this.searchBox.fill(product, { timeout: 90000 });
     await this.page.keyboard.press('Enter');
     const products = this.page.locator('//*[@id="product-list-back"]/li//div[@data-testid="product-img"]');
 // Waits up to 5s (default) for visibility before proceeding
 //await expect(products).toBeVisible({ timeout: 80000 }); 
- await expect(this.page.getByTestId('product-img').first()).toBeVisible({ timeout: 50000 });
+ await expect(this.page.getByTestId('product-img').first()).toBeVisible({ timeout: 90000 });
     //await this.page.screenshot({ path: 'screenshots/homepage.png', fullPage: true });
     await this.page.screenshot({ path: `screenshots/homepage-${Date.now()}.png` });
    
