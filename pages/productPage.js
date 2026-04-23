@@ -174,7 +174,7 @@ async addToCart(productName) {
           console.log(productName + " not visible, scrolling down...");
         await this.page.mouse.wheel(0, 1000); // Scroll down
         //await product.waitFor({ state: 'attached' });
-        await this.page.waitFor({ state: 'visible', timeout: 90000 }); 
+        await product.waitFor({ state: 'visible', timeout: 90000 }); 
        // await this.page.waitForTimeout(1000);  // Wait for new items to load
       }
       await product.scrollIntoViewIfNeeded(); 
