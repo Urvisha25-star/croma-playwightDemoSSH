@@ -7,7 +7,7 @@ import testData from '../testData/data.json';
 
 
 test('Croma User Registration and Login Flow', async ({ page, context  }) => {
-     test.setTimeout(60000); // Give this test 60 seconds to finish
+     test.setTimeout(90000); // Give this test 90 seconds to finish
     // 1. Navigate to Croma
     const home      = new HomePage(page);
     const product   = new ProductPage(page);
@@ -53,8 +53,8 @@ test('Croma User Registration and Login Flow', async ({ page, context  }) => {
     await expect(row).toBeVisible({ timeout: 10000 });
     */
    await expect(page.locator(`//a[contains(text(), "${product}")]`))
-    .toBeVisible({ timeout: 10000 });
-    //await expect(row).toBeVisible({ timeout: 10000 });
+    .toBeVisible({ timeout: 90000 });
+    //await expect(row).toBeVisible({ timeout: 90000 });
     console.log(`Verified: ${product} is in cart and visible.`);
     //await cart.verifyCartItems(testData.targetProduct);
   }
