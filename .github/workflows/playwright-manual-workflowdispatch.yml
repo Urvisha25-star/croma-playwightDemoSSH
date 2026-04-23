@@ -1,11 +1,11 @@
-name: Playwright Tests
+name: Playwright Tests manual workflow_dispatch
 on:
   push:
     branches: [ main, master ]
   workflow_dispatch:
     inputs:
       test_file:
-        description: 'File to run (e.g. tests/login.spec.ts)'
+        description: 'File to run (e.g. tests/login.spec.js)'
         required: true  
   pull_request:
     branches: [ main, master ]
