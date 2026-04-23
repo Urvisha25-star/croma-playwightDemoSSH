@@ -2,7 +2,8 @@ const { test, expect } = require('@playwright/test');
 export class HomePage {
   constructor(page) {
     this.page = page;
-    this.searchBox=page.locator("#searchV2")
+   // this.searchBox=page.locator("#searchV2")
+    this.searchBox = page.getByPlaceholder('What are you looking for ?');
 
     //login locators
     this.loginSignupButton = page.getByTestId('myaccount');
