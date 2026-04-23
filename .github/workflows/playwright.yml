@@ -2,17 +2,6 @@ name: Playwright Tests
 on:
   push:
     branches: [ main, master ]
-  workflow_dispatch:
-    inputs:
-      test_file: 
-        description: 'e2e.spec.ts file to run (optional, runs all tests if not specified)'
-        required: false
-        default: ''
-        type: choice
-        options:
-          - login
-          - e2e
-          
   pull_request:
     branches: [ main, master ]
 jobs:
@@ -29,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test ${{ github.event.inputs.test_file }}
+      run: npx playwright test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
