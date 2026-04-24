@@ -1,18 +1,5 @@
  HEAD
-# Croma Playwright Framework
-
-Automation framework using Playwright with JavaScript.
-
-## Run:
-npm install
-npx playwright install
-npm test
-
-# croma-playwightDemoSSH
-Automation Framework for Testing Croma E-Commerce Website
- 9ffcfd8bbd9614d1863317124d87af8fde165bcf
-
-# Croma E-Commerce Automation Suite 🛒
+ # Croma E-Commerce Automation Suite 🛒
 
 An end-to-end (E2E) testing framework built with **Playwright** and **JavaScript** to automate and validate critical user journeys on the Croma website.
 
@@ -62,3 +49,17 @@ An end-to-end (E2E) testing framework built with **Playwright** and **JavaScript
 
 ## ☁️ Continuous Integration
 This project uses **GitHub Actions** to ensure code quality. You can manually run specific test files via the **Actions** tab using the `test_file` input.
+# Croma Playwright Framework
+
+Automation framework using Playwright with JavaScript.
+
+## Run:
+npm install
+npx playwright install
+npm test
+
+# croma-playwightDemoSSH
+Automation Framework for Testing Croma E-Commerce Website
+ 9ffcfd8bbd9614d1863317124d87af8fde165bcf
+
+
